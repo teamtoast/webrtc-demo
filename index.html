@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Toast WebRTC Demo</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="js/stomp.min.js"></script>
+    <script src="js/rtc.js"></script>
+</head>
+<body>
+    <video id="localVideo" playsinline autoplay muted></video>
+    <video id="remoteVideo" playsinline autoplay muted></video>
+    <button type="button" onclick="hostClick()">Host</button>
+    <button type="button" onclick="remoteClick()">Remote</button>
+    <button type="button" onclick="connectClick()">Offer</button>
+</body>
+</html>
